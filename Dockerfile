@@ -1,8 +1,9 @@
 # i am using ubuntu latestttttt
-FROM kitty6xt5/newmain1
+FROM ubuntu:latest
 
 # installing our ssh services and updating our apt's
 RUN apt update && apt install openssh-server -y
+RUN service ssh start
 
 
 # Exposing  the SSH port here.

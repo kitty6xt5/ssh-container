@@ -2,7 +2,8 @@
 FROM ubuntu:latest
 
 # installing our ssh services and updating our apt's
-RUN apt update && apt install openssh-server -y
+RUN apt update 
+RUN apt install openssh-server -y
 RUN service ssh start
 
 
